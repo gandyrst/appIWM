@@ -29,6 +29,9 @@ export const AppRouter = () => {
                 <HeroesRoutes />
               </PrivateRoute>
             } />
+
+            {/* <Route path="login" element={<LoginPage />} /> */}
+            {/* <Route path="/*" element={ <HeroesRoutes />} /> */}
             
             
 
