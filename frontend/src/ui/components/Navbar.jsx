@@ -6,6 +6,8 @@ import { AuthContext } from '../../auth/context/AuthContext';
 export const Navbar = () => {
 
     const { user, logout } = useContext( AuthContext );
+    const userlog = JSON.parse(localStorage.getItem('user'));
+    console.log(userlog)
     
 
     const navigate = useNavigate();
@@ -57,7 +59,7 @@ export const Navbar = () => {
                 <ul className="navbar-nav ml-auto">
                    
                     <span className="nav-item nav-link text-primary">
-                        { user?.name }
+                        { userlog.name }
                     </span>
 
                     <button

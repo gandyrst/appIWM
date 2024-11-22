@@ -36,7 +36,7 @@ export const LoginPage = () => {
           navigate( lastPath, {
             replace: true
           });
-          login( 'Asarmiento' );
+          login( user );
           return response.json();
         })
         .then(data => {
@@ -68,7 +68,7 @@ export const LoginPage = () => {
                 padding: 2,
                 borderRadius: 1,
                 boxShadow: 3,
-                backgroundColor: 'white',
+                backgroundColor: 'lightblue',
             }}
         >
             <Typography component="h1" variant="h5">
