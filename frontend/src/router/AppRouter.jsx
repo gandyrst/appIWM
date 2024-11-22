@@ -8,6 +8,7 @@ import { PublicRoute } from './PublicRoute';
 
 
 export const AppRouter = () => {
+  console.log('Ultimas pruebas')
   return (
     <>
 
